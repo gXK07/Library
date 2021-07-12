@@ -5,13 +5,15 @@
 
  
 // constructeur d'objet "book"
-   function Book(title, autor, pages, readed){
+    class Book {
+        //constructor
+   constructor(title, autor, pages, readed){
        this.title = title;
        this.autor = autor;
        this.pages = pages;
        this.readed = readed;
-    //    Prochaine étape : modifier la fonction pour qu'elle affiche mieux les choses 
-       this.info = function() {
+   }
+       info(){
            let bookDiv = {
                title : document.createElement("div"),
                autor : document.createElement("div"),
@@ -21,6 +23,7 @@
            return bookDiv;
        }
    }
+
 
    //créer le formualire de départ
    function createForm(){
